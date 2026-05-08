@@ -1,0 +1,309 @@
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doce Encanto Confeitaria</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#fff7f8;
+      color:#333;
+    }
+
+    header{
+      background: linear-gradient(135deg,#ff8fab,#ffb3c6);
+      height:100vh;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
+      color:white;
+    }
+
+    header h1{
+      font-size:4rem;
+      margin-bottom:20px;
+    }
+
+    header p{
+      font-size:1.2rem;
+      max-width:600px;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      background:white;
+      color:#ff4d88;
+      padding:15px 30px;
+      border:none;
+      border-radius:30px;
+      font-size:1rem;
+      cursor:pointer;
+      text-decoration:none;
+      transition:0.3s;
+      font-weight:bold;
+    }
+
+    .btn:hover{
+      background:#ffe5ec;
+      transform:scale(1.05);
+    }
+
+    section{
+      padding:80px 10%;
+    }
+
+    .titulo{
+      text-align:center;
+      margin-bottom:50px;
+      font-size:2.5rem;
+      color:#ff4d88;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:white;
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+    }
+
+    .card h3{
+      padding:15px;
+      color:#ff4d88;
+    }
+
+    .card p{
+      padding:0 15px 20px;
+    }
+
+    .sobre{
+      display:flex;
+      align-items:center;
+      gap:40px;
+      flex-wrap:wrap;
+    }
+
+    .sobre img{
+      width:100%;
+      max-width:450px;
+      border-radius:20px;
+    }
+
+    .sobre-texto{
+      flex:1;
+    }
+
+    .sobre-texto h2{
+      color:#ff4d88;
+      margin-bottom:20px;
+      font-size:2.5rem;
+    }
+
+    .sobre-texto p{
+      line-height:1.8;
+      font-size:1.1rem;
+    }
+
+    .contato{
+      text-align:center;
+      background:#ffe5ec;
+      border-radius:20px;
+      padding:50px 20px;
+    }
+
+    .contato h2{
+      color:#ff4d88;
+      margin-bottom:20px;
+    }
+
+    .contato p{
+      margin:10px 0;
+      font-size:1.1rem;
+    }
+
+    footer{
+      background:#ff8fab;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:50px;
+    }
+
+    @media(max-width:768px){
+      header h1{
+        font-size:2.8rem;
+      }
+
+      .sobre{
+        flex-direction:column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Doce Encanto</h1>
+    <p>
+      Bolos, doces e sobremesas feitos com amor para deixar seus momentos ainda mais especiais.
+    </p>
+
+    <a href="#produtos" class="btn">Ver Produtos</a>
+  </header>
+
+  <section id="produtos">
+    <h2 class="titulo">Nossos Produtos</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1000&auto=format&fit=crop" alt="Bolo">
+        <h3>Bolos Decorados</h3>
+        <p>Bolos personalizados para aniversários, casamentos e festas.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1000&auto=format&fit=crop" alt="Cupcake">
+        <h3>Cupcakes</h3>
+        <p>Sabores incríveis com decoração delicada e moderna.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1519869325930-281384150729?q=80&w=1000&auto=format&fit=crop" alt="Doces">
+        <h3>Doces Gourmet</h3>
+        <p>Brigadeiros, trufas e doces especiais feitos artesanalmente.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="sobre">
+
+      <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?q=80&w=1000&auto=format&fit=crop" alt="Confeitaria">
+
+      <div class="sobre-texto">
+        <h2>Sobre Nós</h2>
+
+        <p>
+          A Doce Encanto nasceu da paixão pela confeitaria artesanal.
+          Trabalhamos com ingredientes selecionados para criar doces únicos,
+          deliciosos e feitos com muito carinho.
+        </p>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer>
+    <p>© 2026 Doce Encanto Confeitaria - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
+
+Em sex., 8 de mai. de 2026, 14:43, Laissa Coutinho <laissacoutinho55@gmail.com> escreveu:
+<body>
+
+  <header>
+    <h1>Doce Encanto</h1>
+    <p>
+      Bolos, doces e sobremesas feitos com amor para deixar seus momentos ainda mais especiais.
+    </p>
+
+    <a href="#produtos" class="btn">Ver Produtos</a>
+  </header>
+
+  <main>
+
+    <section id="produtos">
+      <h2 class="titulo">Nossos Produtos</h2>
+
+      <div class="cards">
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1000&auto=format&fit=crop" alt="Bolo">
+          <h3>Bolos Decorados</h3>
+          <p>Bolos personalizados para aniversários, casamentos e festas.</p>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1000&auto=format&fit=crop" alt="Cupcake">
+          <h3>Cupcakes</h3>
+          <p>Sabores incríveis com decoração delicada e moderna.</p>
+        </div>
+
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1519869325930-281384150729?q=80&w=1000&auto=format&fit=crop" alt="Doces">
+          <h3>Doces Gourmet</h3>
+          <p>Brigadeiros, trufas e doces especiais feitos artesanalmente.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="sobre">
+
+        <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?q=80&w=1000&auto=format&fit=crop" alt="Confeitaria">
+
+        <div class="sobre-texto">
+          <h2>Sobre Nós</h2>
+
+          <p>
+            A Doce Encanto nasceu da paixão pela confeitaria artesanal.
+            Trabalhamos com ingredientes selecionados para criar doces únicos,
+            deliciosos e feitos com muito carinho.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <div class="contato">
+        <h2>Contato</h2>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Doce Encanto Confeitaria - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+
+
+
+  
